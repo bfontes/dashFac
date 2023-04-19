@@ -293,74 +293,6 @@ export const recentTransactions = [
   },
 ];
 
-export const weeklyStats = [
-  {
-    icon: <FiStar />,
-    amount: '-$560',
-    title: 'Best Seller',
-    desc: 'MaterialPro Admin',
-    iconBg: 'rgb(254, 201, 15)',
-    pcColor: 'red-600',
-  },
-  {
-    icon: <BsChatLeft />,
-    amount: '+$560',
-    title: 'Most Commented',
-    desc: 'Ample Admin',
-    iconBg: '#00C292',
-    pcColor: 'green-600',
-  },
-];
-
-
-export const medicalproBranding = {
-  data: [
-    {
-      title: 'Due Date',
-      desc: 'Oct 23, 2021',
-    },
-    {
-      title: 'Budget',
-      desc: '$98,500',
-    },
-    {
-      title: 'Expense',
-      desc: '$63,000',
-    },
-  ],
-  teams: [
-    {
-      name: 'Bootstrap',
-      color: 'orange',
-    },
-    {
-      name: 'Angular',
-      color: '#FB9678',
-    },
-  ],
-  leaders: [
-    {
-      image:
-        avatar2,
-    },
-    {
-      image:
-        avatar3,
-    },
-    {
-      image:
-        avatar2,
-    },
-    {
-      image:
-        avatar4,
-    },
-    {
-      image:
-        avatar,
-    },
-  ],
-};
 
 export const themeColors = [
   {
@@ -1474,14 +1406,14 @@ export const scheduleData = [
 export const dropdownData = [
   {
     Id: '1',
-    Time: 'March 2021',
+    Time: 'February 2023',
   },
   {
     Id: '2',
-    Time: 'April 2021',
+    Time: 'March 2023',
   }, {
     Id: '3',
-    Time: 'May 2021',
+    Time: 'April 2023',
   },
 ];
 export const contextMenuItems = [
