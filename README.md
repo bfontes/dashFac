@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project i used react 17, as well as sync fusion which is a powerful component library for UI, jest for testing, Styled-Components in smaller files and Tailwind for larger files.
 
 ## Available Scripts
 
