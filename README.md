@@ -1,4 +1,4 @@
-# Challenge
+# DashBoard project
 
 In this project I used React 17, as well as sync fusion which is a powerful component library for UI, jest for testing, Styled-Components in smaller files and Tailwind for larger files.
 
