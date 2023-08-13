@@ -38,7 +38,7 @@ test('should render user profile data', () => {
   expect(userName).toBeInTheDocument();
   const jobTitle = screen.getByText('FrontEnd Enginner');
   expect(jobTitle).toBeInTheDocument();
-  const email = screen.getByText('ana@factory.com');
+  const email = screen.getByText('ana.com');
   expect(email).toBeInTheDocument();
 });
 

@@ -1,6 +1,8 @@
 export { default as Button } from './Button';
 export { default as ThemeSettings } from './ThemeSettings';
 export { default as Sidebar } from './Sidebar';
+//Nesse caso, pode-se desabilitar temporariamente a regra para evitar
+// a interrupção da construção ou a introdução de código desnecessário para evitar o ciclo.
 // eslint-disable-next-line import/no-cycle
 export { default as Navbar } from './Navbar';
 export { default as Footer } from './Footer';

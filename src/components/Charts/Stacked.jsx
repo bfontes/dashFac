@@ -22,6 +22,7 @@ const Stacked = ({ width, height }) => {
       <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />
       <SeriesCollectionDirective>
         {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+        {/*mapeando cada elemento do array para um novo array que sera renderizado na tela*/}
         {stackedCustomSeries.map((item, index) => <SeriesDirective key={index} {...item} />)}
       </SeriesCollectionDirective>
     </ChartComponent>

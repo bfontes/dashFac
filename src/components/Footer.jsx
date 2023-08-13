@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterText>
-        © 2023 All rights reserved by FactoryPal.com
+        © 2023 All rights reserved by Ana.com
       </FooterText>
     </FooterContainer>
   )

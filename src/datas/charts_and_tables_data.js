@@ -1,5 +1,3 @@
-
-
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject } from '@syncfusion/ej2-react-charts';
 
 export const metricData = {
@@ -210,8 +208,6 @@ export const barCustomSeries = [
 ];
 
 
-
-
 export const pieChartData = [
   { x: 'oee', y: 0.68, text: '68%' },
   { x: 'Speed loss', y:-10.5, text: '-10.5%' },
@@ -228,9 +224,12 @@ export const ecomPieChartData = [
   
 ];
 const categories = ["efficiency", "shift", "downtime"];
-
+//criar um array de dados da matriz, que correspondem a categoria atual usando o filter, em seguida
+//uso o map dnv para tranformar o resultado em um array de obj, com propriedades x e y,
+//o resultado é um array de array 
 const stackedChartData = categories.map((category) => {
   return StackedData.data.filter((item) => item.category === category).map((item) => {
+    {/*retorna um array para cada categoria com objetos com props x e y */}
     return { x: item.label, y: item.value };
   });
 });
@@ -266,68 +265,3 @@ export const stackedPrimaryYAxis = {
   minorGridLines: { width: 1 },
   labelFormat: '{value}',
 }
-// export const stackedChartData = [
-//   [
-//     { x: 'Jan', y: 111.1 },
-//     { x: 'Feb', y: 127.3 },
-//     { x: 'Mar', y: 143.4 },
-//     { x: 'Apr', y: 159.9 },
-//     { x: 'May', y: 159.9 },
-//     { x: 'Jun', y: 159.9 },
-//     { x: 'July', y: 159.9 },
-//   ],
-//   [
-//     { x: 'Jan', y: 111.1 },
-//     { x: 'Feb', y: 127.3 },
-//     { x: 'Mar', y: 143.4 },
-//     { x: 'Apr', y: 159.9 },
-//     { x: 'May', y: 159.9 },
-//     { x: 'Jun', y: 159.9 },
-//     { x: 'July', y: 159.9 },
-//   ],
-// ];
-
-// export const stackedCustomSeries = [
-
-//   { dataSource: stackedChartData[0],
-//     xName: 'x',
-//     yName: 'y',
-//     name: 'Budget',
-//     type: 'StackingColumn',
-//     background: 'blue',
-
-//   },
-
-//   { dataSource: stackedChartData[1],
-//     xName: 'x',
-//     yName: 'y',
-//     name: 'Expense',
-//     type: 'StackingColumn',
-//     background: 'red',
-
-//   },
-
-// ];
-
-// export const stackedPrimaryXAxis = {
-//   majorGridLines: { width: 0 },
-//   minorGridLines: { width: 0 },
-//   majorTickLines: { width: 0 },
-//   minorTickLines: { width: 0 },
-//   interval: 1,
-//   lineStyle: { width: 0 },
-//   labelIntersectAction: 'Rotate45',
-//   valueType: 'Category',
-// };
-
-// export const stackedPrimaryYAxis = {
-//   lineStyle: { width: 0 },
-//   minimum: 100,
-//   maximum: 400,
-//   interval: 100,
-//   majorTickLines: { width: 0 },
-//   majorGridLines: { width: 1 },
-//   minorGridLines: { width: 1 },
-//   minorTickLines: { width: 0 },
-//   labelFormat: '{value}',
-// };

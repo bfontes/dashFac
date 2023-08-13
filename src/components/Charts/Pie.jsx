@@ -8,6 +8,7 @@ const Doughnut = ({ id, data, legendVisiblity, height }) => {
 
   return (
     <AccumulationChartComponent
+    //the const is a property inside de component to be rendered as part of a chart
       id={id}
       legendSettings={{ visible: legendVisiblity, background: 'white' }}
       height={height}

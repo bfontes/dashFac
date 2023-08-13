@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { pieChartData } from '../../datas/charts_and_tables_data';
 import { ChartsHeader, Pie as PieChart } from '../../components';
 

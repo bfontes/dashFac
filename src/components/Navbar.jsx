@@ -91,18 +91,19 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   </TooltipComponent>
 );
 
-
+//the const values are passed as property for the component when he is rendered  in another component, passed from father to son
 const Navbar = () => {
   const { currentColor, activeMenu, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
-
+    //handleResize é usada como listener para o evento de resize da janela 
     window.addEventListener('resize', handleResize);
-
+    //define o estado inicial do tamanho da janela
     handleResize();
-
+    //garante que o codigo seja executado de forma limpa qnd o comp for desmontado(disassembled)
     return () => window.removeEventListener('resize', handleResize);
+    //[] garante q a função seja executada somente uma vez e que não seja chamada desnecessariamente
   }, []);
 
   useEffect(() => {

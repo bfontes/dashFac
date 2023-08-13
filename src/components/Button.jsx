@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useStateContext } from '../contexts/ContextProvider';
-
+//the const values are passed as property for the component when he is rendered  in another component, passed from father to son
 const Button = ({ icon, bgColor, color, bgHoverColor, size, text, borderRadius, width }) => {
   const { setIsClicked, initialState } = useStateContext();
 
